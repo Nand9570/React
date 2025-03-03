@@ -75,11 +75,11 @@ async def clone_txt(client, message):
             )
         
         except PeerIdInvalid as e:
-            await mi.edit_text(f"**Your Bot Siccessfully Cloned👍**\n**You can check by /cloned**\n\n**But please start me (@{app.username}) From owner id**")
+            await mi.edit_text(f"**Your Bot Successfully Cloned👍**\n**You can check by /cloned**\n\n**But please start me (@{app.username}) From owner id**")
         except BaseException as e:
             logging.exception("Error while cloning bot.")
             await mi.edit_text(
-                f"⚠️ <b>Error:</b>\n\n<code>{e}</code>\n\n**Forward this message to @THE_VIP_BOY_OP for assistance**"
+                f"⚠️ <b>Error:</b>\n\n<code>{e}</code>\n\n**Forward this message to @TMZEROO for assistance**"
             )
     else:
         await message.reply_text("**Provide Bot Token after /clone Command from @Botfather.**\n\n**Example:** `/clone bot token paste here`")
